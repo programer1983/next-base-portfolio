@@ -26,6 +26,7 @@
   background-color: gray;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 1;
   transition: 0.5s ease;
   overflow-y: auto;
@@ -36,7 +37,6 @@
   flex-direction: column;
   align-items: center;
   row-gap: 3.4375rem;
-  padding: 9.375rem 0 1.875rem 0;
 }
 
 .mobile__menu-link {
