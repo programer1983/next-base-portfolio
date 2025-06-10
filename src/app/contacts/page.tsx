@@ -5,11 +5,9 @@ import "./contacts.scss";
 import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import emailjs from "emailjs-com";
-import { p } from "framer-motion/client";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
@@ -126,4 +124,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
