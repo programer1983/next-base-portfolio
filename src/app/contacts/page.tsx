@@ -9,7 +9,7 @@ import emailjs from "emailjs-com";
 
 const Page = () => {
   const router = useRouter();
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
   const [isSent, setIsSent] = useState(false);
   const [error, setError] = useState(null);
 
@@ -20,31 +20,33 @@ const Page = () => {
     });
   }, []);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_zggnhtm",
-        "template_neckv1k",
-        form.current,
-        "user_RyWBgBRflyUzGSWbQ6rhV"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsSent(true);
-          form.current.reset();
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_zggnhtm",
+          "template_neckv1k",
+          form.current,
+          "user_RyWBgBRflyUzGSWbQ6rhV"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setIsSent(true);
+            form.current!.reset();
 
-          setTimeout(() => {
-            setIsSent(false);
-          }, 5000);
-        },
-        (error) => {
-          console.error(error.text);
-          setError("Помилка при відправці.");
-        }
-      );
+            setTimeout(() => {
+              setIsSent(false);
+            }, 5000);
+          },
+          (error) => {
+            console.error(error.text);
+            setError("Помилка при відправці.");
+          }
+        );
+    }
   };
 
   return (
