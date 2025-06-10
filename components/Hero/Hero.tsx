@@ -8,11 +8,14 @@ const Hero = () => {
     if (window.innerWidth >= 500) {
       AOS.init({ duration: 1000 });
     } else {
-      const elements = document.querySelectorAll("[data-aos]");
-      elements.forEach((el) => {
-        el.removeAttribute("data-aos");
-        el.removeAttribute("data-aos-delay");
-      });
+      const heroSection = document.querySelector(".hero");
+      if (heroSection) {
+        const elements = document.querySelectorAll("[data-aos]");
+        elements.forEach((el) => {
+          el.removeAttribute("data-aos");
+          el.removeAttribute("data-aos-delay");
+        });
+      }
     }
   }, []);
   return (
