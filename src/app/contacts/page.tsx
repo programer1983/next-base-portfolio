@@ -11,7 +11,7 @@ const Page = () => {
   const router = useRouter();
   const form = useRef<HTMLFormElement>(null);
   const [isSent, setIsSent] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     AOS.init({
