@@ -30,7 +30,7 @@ const Header = () => {
     };
   }, [lastScrollY]);
 
-  const handleLinkClick = (path) => {
+  const handleLinkClick = (path: string) => {
     const targetId = path.replace("#", "");
     const targetEliment = document.getElementById(targetId);
 
