@@ -14,6 +14,9 @@
     flex-direction: column-reverse;
     row-gap: 5.625rem;
   }
+  @media (max-width: 500px) {
+    row-gap: 3.125rem;
+  }
 }
 
 .about__image {
