@@ -26,13 +26,13 @@ export const workstData = [
   {
     id: "5",
     src: "/images/Works/work-5.jpg",
-    text: "Додаток з пошуку коктелів на React",
+    text: "Додаток з пошуку коктейлів на React",
     path: "https://react-cocktails-restaurant.vercel.app/",
   },
   {
     id: "6",
     src: "/images/Works/work-6.jpg",
-    text: "Сайт горячі тури на scss js",
+    text: "Сайт гарячі тури на scss js",
     path: "https://layout-travel-main-page.vercel.app/",
   },
   {
@@ -50,7 +50,7 @@ export const workstData = [
   {
     id: "9",
     src: "/images/Works/work-9.jpg",
-    text: "Додаток на React з замовлення піцци і дисертів",
+    text: "Додаток на React з замовлення піци і десертів",
     path: "https://react-pizza-shopp-landing.vercel.app/",
   },
   {
@@ -86,13 +86,13 @@ export const workstData = [
   {
     id: "15",
     src: "/images/Works/work-15.jpg",
-    text: "Сайт фитнесклубу на scss js",
+    text: "Сайт фітнесклубу на scss js",
     path: "https://layout-fitness-lub.vercel.app/",
   },
   {
     id: "16",
     src: "/images/Works/work-16.jpg",
-    text: "Портфоліо UI/UX дезайнера на scss js",
+    text: "Портфоліо UI/UX дизайнера на scss js",
     path: "https://layout-creative-designer.vercel.app/",
   },
   {
@@ -104,7 +104,7 @@ export const workstData = [
   {
     id: "18",
     src: "/images/Works/work-18.jpg",
-    text: "Додаток з пошуку филмів на React",
+    text: "Додаток з пошуку фільмів на React",
     path: "https://react-tv-api-search-app.vercel.app/",
   },
   {
